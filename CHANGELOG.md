@@ -1,5 +1,7 @@
 # Changelog
 
+**Maintained by [@Tarunrj99](https://github.com/Tarunrj99)**
+
 All notable changes to this guide are documented here.
 
 Format follows [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).

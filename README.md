@@ -116,8 +116,8 @@ This setup is different:
               │                                     │
               ▼                                     ▼
   ┌──────────────────────────┐       ┌───────────────────────────────┐
-  │      Your terminal       │       │    AI / Agent tools           │
-  │                          │       │    (Cursor, Claude, etc.)     │
+  │      Your terminal       │       │    AI coding tools            │
+  │                          │       │    (any agent, any session)   │
   │  export MY_TOKEN=$(      │       │                               │
   │    security find-        │       │  Runs the exact same command  │
   │    generic-password      │       │  in its own shell session —   │

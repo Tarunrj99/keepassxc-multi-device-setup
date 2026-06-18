@@ -173,17 +173,17 @@ Never use email, Slack, Drive, or any messaging platform to transfer a private k
 
 ## Secrets & Keychain
 
-**Q: If KeePassXC stores my secrets, how does the AI (Cursor, etc.) fetch them automatically?**
+**Q: If KeePassXC stores my secrets, how do AI coding tools fetch them automatically?**
 
-KeePassXC on its own only lets you manually copy a value. AI tools open **fresh shell sessions** that cannot inherit your clipboard or manually set variables.
+KeePassXC on its own only lets you manually copy a value. AI coding tools open **fresh shell sessions** that cannot inherit your clipboard or manually set variables.
 
-The solution is **macOS Keychain** — a system daemon that auto-unlocks on Mac login. Every terminal, including the AI's, can read from it:
+The solution is **macOS Keychain** — a system daemon that auto-unlocks on Mac login. Every terminal, including the AI tool's session, can read from it:
 
 ```bash
 export MY_TOKEN=$(security find-generic-password -s "my-service-name" -w)
 ```
 
-When you ask the AI to do something that needs a secret, it runs this command in its own session — Keychain returns the value immediately with no user interaction.
+When you ask an AI tool to do something that needs a secret, it runs this command in its own session — Keychain returns the value immediately with no user interaction.
 
 See [SECRETS_AND_CONFIGS.md](SECRETS_AND_CONFIGS.md) for the full setup.
 

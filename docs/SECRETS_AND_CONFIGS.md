@@ -49,7 +49,7 @@ You cannot use KeePassXC alone for terminal access because:
 
 ## Why macOS Keychain Works for AI Tools
 
-When Cursor AI (or any AI coding tool) runs a terminal command, it opens a **fresh shell session** — completely separate from your terminal. It cannot inherit any variables you set manually.
+When an AI coding tool runs a terminal command, it opens a **fresh shell session** — completely separate from your terminal. It cannot inherit any variables you set manually.
 
 macOS Keychain solves this because it is a **system daemon** that auto-unlocks the moment you log in to your Mac. Every terminal — yours, the AI's, any process — can ask it for a value using the built-in `security` command:
 

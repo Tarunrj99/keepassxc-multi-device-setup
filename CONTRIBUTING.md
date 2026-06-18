@@ -1,5 +1,7 @@
 # Contributing
 
+**Maintainer:** [@Tarunrj99](https://github.com/Tarunrj99)
+
 Thank you for helping improve this guide. Contributions of all kinds are welcome — corrections, additions, clarifications, and improvements.
 
 ---
